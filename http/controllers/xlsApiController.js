@@ -41,7 +41,9 @@ function xlsApiController() {
 
                         newArr.push(json.results.books[i].title);
 
-                        if (req.query.book == newArr[i] || req.params.book == newArr[i]) {
+                        const bookName = req.query.book.toUpperCase();
+
+                        if (bookName == newArr[i] || bookName == newArr[i]) {
                             ///////////// json to csv /////////////////////
                             const stats = json.results.books[i];
                             jsonexport(stats, function (err, csv) {
