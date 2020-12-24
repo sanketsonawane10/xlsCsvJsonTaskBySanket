@@ -1,0 +1,20 @@
+{
+  "name": "xls-app",
+  "version": "1.0.0",
+  "description": "get data from api and store it in xls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sanket sonawane",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.0.6",
+    "express": "^4.17.1",
+    "is-json": "^2.0.1",
+    "json2csv": "^5.0.5",
+    "json2xls": "^0.1.2",
+    "jsonexport": "^3.0.1",
+    "node-fetch": "^2.6.1"
+  }
+}
